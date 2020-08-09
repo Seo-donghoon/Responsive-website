@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mariana bay sands hotel</title>
+<!-- 뷰포트 설정 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 외부  스타일 적용 -->
+<link rel="stylesheet" href="style/reset.css">
+<link rel="stylesheet" href="style/style2.css">
+
+<script src="jquery-3.1.0.min.js"></script>
+<script>
+$(function(){
+	$("#quick_ico").bind("click", function(){
+		if($("#quick_menu ul").css("display") == "none"){
+			$("#quick_menu ul").slideDown();
+		}
+		else{
+			$("#quick_menu ul").slideUp();
+		}
+	});
+});
+</script>
+
+</head>
+
+<body>
+<div id="stage">
+
+<header>
+<h1 id="top"><a href="index.html"><img src="images/img_logo.jpg" alt="로고이미지"></a></h1>
+
+<!-- 퀵메뉴 부분 -->
+<div id="quick_menu">
+<div id="quick_ico">
+	<img src="images/bars-1.png" width="40" height="40">
+	<ul>
+		<li><a href="#">contact</a></li>
+		<li><a href="#">news</a></li>
+		<li><a href="#">sitemap2</a></li>
+	</ul>
+</div>
+</div>
+
+<ul id="s_nav" class="cf">
+	<li class="contact"><a href="https://ko.marinabaysands.com/restaurants/view-all.html?Cuisines=Local" target="_blank">Information</a></li>
+	<li class="news"><a href="https://www.todayonline.com/topics/marina-bay-sands" target="_blank">news</a></li>
+	<li class="sitemap"><a href="https://www.tripadvisor.com/RestaurantsNear-g294265-d1770798-Marina_Bay_Sands-Singapore.html" target="_blank" >Introduce</a></li>
+</ul>
+
+<p>
+<img src="images/img_top3.jpg" alt="배경그림">
+</p>
+</header>
+
+<nav>
+
+
+
+</nav>
+
+<div id="contents" class="cf">
+<section id="news">
+<h2 >Bay food series</h2>
+
+<article>
+<h3 class="blinkEle">Food court</h3>
+<p id="font1">
+Feast and drink on delicious dishes and delightful concoctions to your heart's content with the offers and deals at Marina Bay Sands' best restaurants and bars.
+
+</p>
+</article>
+
+<article>
+<h3  class="blinkEle">Food service</h3>
+<p id="font2">
+Rise Restaurant at Marina Bay Sands (MBS) is an all day dining restaurant with an international buffet spread. Even though the Rise buffet prices are not cheap ($45++ for lunch, and $68++ for dinner), it has been extremely popular with buffet lovers.
+
+The question on everybody’s mind: is this the best buffet in Singapore? Is it worth spending eighty bucks for a buffet dinner?
+
+One thing to note first, Rise restaurant at Marina Bay Sands does not take phone reservations, so if you are going for the MBS buffet during a weekend, it will be wise to go earlier (buffet dinner starts at 6pm) to get a table, especially for big groups.
+</p>
+</article>
+</section>
+
+<section id="information">
+<h2>Information</h2>
+<ul>
+	<li><a href="#"><img src="images/pic4.jpg" alt="pic1그림" width="450" height="150"></a></li>
+	<li><iframe width="956" height="538" src="https://www.youtube.com/embed/UP6P99ZzQdI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+</ul>
+</section>
+</div>
+
+<!-- 페이지 상단으로 가는 버튼 -->
+<a id="pagetop" href="#top"><img src="images/pagetop.png"></a>
+
+<footer>
+<div>
+		<a href="#"><img src="images/img_s_logo.jpg" alt="작은로고"></a>
+	<p>Seo_donghoon<br>mariana bay sands hotel -Singapore-</p>
+	<small>Copyright &copy; 2020 Responsive Web Page. All rights Reserved.</small>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>

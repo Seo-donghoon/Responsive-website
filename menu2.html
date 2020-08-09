@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mariana bay sands hotel</title>
+<!-- 뷰포트 설정 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 외부  스타일 적용 -->
+<link rel="stylesheet" href="style/reset.css">
+<link rel="stylesheet" href="style/style2.css">
+
+<script src="jquery-3.1.0.min.js"></script>
+<script>
+$(function(){
+	$("#quick_ico").bind("click", function(){
+		if($("#quick_menu ul").css("display") == "none"){
+			$("#quick_menu ul").slideDown();
+		}
+		else{
+			$("#quick_menu ul").slideUp();
+		}
+	});
+});
+</script>
+
+</head>
+
+<body>
+<div id="stage">
+
+<header>
+<h1 id="top"><a href="index.html"><img src="images/img_logo.jpg" alt="로고이미지"></a></h1>
+
+<!-- 퀵메뉴 부분 -->
+<div id="quick_menu">
+<div id="quick_ico">
+	<img src="images/bars-1.png" width="40" height="40">
+	<ul>
+		<li><a href="#">contact</a></li>
+		<li><a href="#">news</a></li>
+		<li><a href="#">sitemap2</a></li>
+	</ul>
+</div>
+</div>
+
+<ul id="s_nav" class="cf">
+	<li class="contact"><a href="https://theculturetrip.com/asia/singapore/articles/history-of-marina-bay-sands-in-1-minute/" target="_blank">Information</a></li>
+	<li class="news"><a href="https://www.todayonline.com/topics/marina-bay-sands" target="_blank">news</a></li>
+	<li class="sitemap"><a href="https://www.22places.com/marina-bay-sands-pool-access/" target="_blank" >Introduce</a></li>
+</ul>
+
+<p>
+<img src="images/img_top1.jpg" alt="배경그림">
+</p>
+</header>
+
+<nav>
+
+
+
+</nav>
+
+<div id="contents" class="cf">
+<section id="news">
+<h2>Casino</h2>
+
+<article>
+<h3 class="blinkEle">Casino game</h3>
+<p id="font1">
+Games available in most casinos are commonly called casino games. In a casino game, the players gamble casino chips on various possible random outcomes or combinations of outcomes. Casino games are also available in online casinos, where permitted by law. Casino games can also be played outside casinos for entertainment purposes like in parties or in school competitions, some on machines that simulate gambling.
+</p>
+</article>
+
+<article>
+<h3  class="blinkEle">Casino view</h3>
+<p id="font2">
+There are three general categories of casino games: table games, electronic gaming machines, and random number ticket games such as keno. Gaming machines, such as slot machines and pachinko, are usually played by one player at a time and do not require the involvement of casino employees to play. Random number games are based upon the selection of random numbers, either from a computerized random number generator or from other gaming equipment. Random number games may be played at a table, such as roulette, or through the purchase of paper tickets or cards, such as keno or bingo.
+</p>
+</article>
+</section>
+
+<section id="information">
+<h2>Information</h2>
+<ul>
+	<li><a href="#"><img src="images/pic2.jpg" alt="pic1그림" width="450" height="250"></a></li>
+	<li><iframe width="956" height="538" src="https://www.youtube.com/embed/f1X-TFrjvhI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+</ul>
+</section>
+</div>
+
+<!-- 페이지 상단으로 가는 버튼 -->
+<a id="pagetop" href="#top"><img src="images/pagetop.png"></a>
+
+<footer>
+<div>
+		<a href="#"><img src="images/img_s_logo.jpg" alt="작은로고"></a>
+	<p>Seo_donghoon<br>mariana bay sands hotel -Singapore-</p>
+	<small>Copyright &copy; 2020 Responsive Web Page. All rights Reserved.</small>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>

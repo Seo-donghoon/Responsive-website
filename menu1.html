@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mariana bay sands hotel</title>
+<!-- 뷰포트 설정 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 외부  스타일 적용 -->
+<link rel="stylesheet" href="style/reset.css">
+<link rel="stylesheet" href="style/style2.css">
+
+<script src="jquery-3.1.0.min.js"></script>
+<script>
+$(function(){
+	$("#quick_ico").bind("click", function(){
+		if($("#quick_menu ul").css("display") == "none"){
+			$("#quick_menu ul").slideDown();
+		}
+		else{
+			$("#quick_menu ul").slideUp();
+		}
+	});
+});
+</script>
+
+</head>
+
+<body>
+<div id="stage">
+
+<header>
+<h1 id="top"><a href="index.html"><img src="images/img_logo.jpg" alt="로고이미지"></a></h1>
+
+<!-- 퀵메뉴 부분 -->
+<div id="quick_menu">
+<div id="quick_ico">
+	<img src="images/bars-1.png" width="40" height="40">
+	<ul>
+		<li><a href="#">contact</a></li>
+		<li><a href="#">news</a></li>
+		<li><a href="#">sitemap2</a></li>
+	</ul>
+</div>
+</div>
+
+<ul id="s_nav" class="cf">
+	<li class="contact"><a href="https://theculturetrip.com/asia/singapore/articles/history-of-marina-bay-sands-in-1-minute/" target="_blank">Information</a></li>
+	<li class="news"><a href="https://www.todayonline.com/topics/marina-bay-sands" target="_blank">news</a></li>
+	<li class="sitemap"><a href="https://www.22places.com/marina-bay-sands-pool-access/" target="_blank" >Introduce</a></li>
+</ul>
+
+<p>
+<img src="images/img_top.jpg" alt="배경그림">
+</p>
+</header>
+
+<nav>
+
+
+
+</nav>
+
+<div id="contents" class="cf">
+<section id="news">
+<h2 >Swimming pool</h2>
+
+<article class="tex">
+<h3 class="blinkEle">Night view</h3>
+<p id="font1">
+The Marina Bay Sands Light and Water Show is one show that you can watch in Singapore every night for free. The shows start at 8pm and 9.30pm. On Friday and Saturday nights, there is another show at 11pm.
+</p>
+</article>
+
+<article>
+<h3  class="blinkEle">Swimming pool</h3>
+<p id="font2">
+But here comes the big 'but': Pool access is reserved for guests of the hotel. So you can't just put on your swimsuit and jump in the pool. Unfortunately there are no exceptions, otherwise the pool would probably be bursting at the seams.
+</p>
+</article>
+</section>
+
+<section id="information">
+<h2>Information</h2>
+<ul>
+	<li><a href="#"><img src="images/pic1.jpg" alt="pic1그림" width="450" height="150"></a></li>
+	<li><iframe width="956" height="538" src="https://www.youtube.com/embed/KYo6lUn25gs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe></li>
+</ul>
+</section>
+</div>
+
+<!-- 페이지 상단으로 가는 버튼 -->
+<a id="pagetop" href="#top"><img src="images/pagetop.png"></a>
+
+<footer>
+<div>
+		<a href="#"><img src="images/img_s_logo.jpg" alt="작은로고"></a>
+	<p>Seo_donghoon<br>mariana bay sands hotel -Singapore-</p>
+	<small>Copyright &copy; 2020 Responsive Web Page. All rights Reserved.</small>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,635 @@
+
+/* 웹 폰트 설정 */
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Athiti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@300&family=Bellota&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@300&family=Taviraj:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Gamja+Flower&family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Caveat:wght@700&family=Gamja+Flower&family=Roboto+Condensed:wght@700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+header h1 a img {
+	 border-radius: 10%;
+}
+nav a img{
+	 border-radius: 40%;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+	outline: 0;
+	text-decoration: none;
+	color: #555;
+}
+
+img {
+	border: 0;
+}
+
+body {
+	color: #555;
+}
+
+header {
+	position: fixed; /* 내가 정한 위치에 항상 고정됨 (스크롤이 생겨도) */
+	top: 0px;
+	left: 0px;
+	width: 15%;
+	height: 100%;
+	background-color: #c0c0c0;
+	transition: all 0.5s;
+}
+
+h1{
+	
+	width: 90%;
+	margin: 20px auto 5px auto;
+}
+
+#abc {
+	position: relative;
+	top: 12%;
+	left: 0;
+}
+
+#abc li {
+	text-align: center;	
+	line-height: 1.8;
+}
+
+#abc li a, #abc li a:hover {
+	font-size: 24px;
+	display: list-item;
+	width: 100%;
+	font-family: 'Athiti';
+	letter-spacing: 0.1em;
+	transition: background-color 1s;
+	 border-radius: 40%;
+}
+
+#abc li a:hover {
+	color: orange;
+	background-color: #ffffff;
+}
+
+.snsSet {
+	/* position: relative는 static과 진행방향대로 동일하지만 left, right, top, bottom 을 사용할 수 있음 */
+	position: absolute;
+	left: 0px;
+	bottom: 15px;
+	width: 100%;
+	text-align: center;
+	
+}
+
+.snsSet a {
+	display: inline-block;
+}
+
+.snsSet a img {
+	 border-radius: 30%;
+}
+nav {
+	position: relative; /* static 처럼 문서 흐름이 같지만, left, right, top, bottom을 사용하여 위치 지정 */
+	width: 85%;
+	height: 35px;
+	background-color: #c0c0c0;
+	margin-left: 15%;
+	
+}
+
+section {
+	position: relative;
+	width: 85%;	
+	margin-left: 15%;
+}
+
+article {
+	float: left;
+	height: 260px;
+	/* 애니메이션 효과 추가 */
+}
+
+/* 각 박스(article)의 크기 지정 */
+article:nth-child(1) { width: 60%; height: 520px; background-color: #ddd; }
+article:nth-child(2) { width: 40%; background-color: #ccc; }
+article:nth-child(3) { width: 20%; background-color: #bbb; }
+article:nth-child(4) { width: 20%; background-color: #aaa; }
+article:nth-child(5) { width: 20%; background-color: #999; }
+article:nth-child(6) { width: 40%; background-color: #888; }
+article:nth-child(7) { width: 20%; background-color: #777; }
+article:nth-child(8) { width: 20%; background-color: #666; }
+article:nth-child(9) { width: 40%; background-color: #555; }
+article:nth-child(10) { width: 20%; background-color: #444; }
+article:nth-child(11) { width: 20%; background-color: #333; }
+article:nth-child(12) { width: 20%; background-color: #222; }
+
+
+/***************************** 배경이미지 작성 *************************************/
+.bg1 { background-image: url(../images/bg1.jpg); background-size: cover; }
+.bg2 { background-image: url(../images/bg2.jpg); background-size: cover; }
+.bg3 { background-image: url(../images/bg3.jpg); background-size: cover; }
+.bg4 { background-image: url(../images/bg4.jpg); background-size: cover; }
+.bg5 { background-image: url(../images/bg5.jpg); background-size: cover; }
+.bg6 { background-image: url(../images/bg6.jpg); background-size: cover; }
+.bg7 { background-image: url(../images/bg7.jpg); background-size: cover; }
+
+
+
+/***************************** 텍스트 박스 작성 *************************************/
+.txt1 {
+	
+	background-color: #370037;
+	color: white;
+	height: 100%;
+	position: relative;
+	transition: background-color 1s, color 0.5s;
+	font-family: 'Athiti';
+}
+
+.txt1:hover {
+	background-color: #8080c0;
+	color: #ffdbca;
+}
+
+.txt1 span {
+	position: relative;
+	left: 15px;
+	top:10px;
+	font-size: 20px;
+	color: #feab50;
+	text-align: center;
+	font-family: 'Black Han Sans', sans-serif;
+	
+}
+
+.txt1 p {
+	left: 15px;
+	top:10px;
+	position: relative;
+	width: 88%;
+	font-size: 16px;
+	margin-top: 7px;
+	font-family: 'Gamja Flower', cursive;
+}
+#food {
+	position: relative;
+	left: 15px;
+	top:30px;
+	width:80%;
+	
+	height: 35px;
+	text-align: center;
+	background-color: white;
+	color: gray;
+	border-radius: 5px;
+	padding-top: 10px;
+	font-family: 'Caveat';
+}
+#food:hover {
+	opacity:0.8;
+	font-weight: bolder;
+}
+
+
+/***************************** 이미지 박스 호버 효과 작성 *************************************/
+.bg1 span {
+	position: relative;
+	top: 0px;
+	opacity: 0.0;
+	color: #ffffff;
+	font-family: 'Taviraj';
+}
+
+.bg1:hover span {
+	opacity: 1;
+	color: white;
+	animation: ani1 2s 1;
+}
+
+@keyframes ani1 {
+	0% {
+		margin-left: 0px;
+		top: 0px;
+		opacity: 0.0;
+		color: #c0c0c0;
+	}
+	100% {
+		font-size: 300%;
+		margin-left: 150px;
+		color: white;
+		top: 200px;
+		opacity: 1.0;
+	}
+}
+
+.bg1 span {
+	font-size: 300%;
+	margin-left: 150px;
+	top: 200px;
+	opacity: 0.0;
+}
+
+
+/**************************** 미디어 쿼리 작성 *************************************/
+
+/* 1000~1299px 사이이면 적용 */
+@media all and (min-width: 1000px) and (max-width: 1299px) {
+	 header {
+	 	display: none;
+		/*
+	 	position: relative;
+	 	width: 100%;
+	 	height: 80px;
+	 	*/
+	 }
+	 
+	 nav {
+	 	margin-left: 0%;
+		width: 100%;
+	 }
+	 
+	 section {
+	 	margin-left: 0%;
+		width: 100%;
+	 }	 
+	 
+	 /***************************** 이미지 박스 호버 효과 작성 *************************************/
+.bg1 span {
+	position: relative;
+	top: 100px;
+	opacity: 0.0;
+	color: #8080ff;
+	font-family: 'Taviraj';
+}
+
+.bg1:hover span {
+	opacity: 1;
+	color: white;
+	animation: ani2 2.5s 1;
+}
+
+@keyframes ani2 {
+	0% {
+		margin-left: 0px;
+		top: 100px;
+		opacity: 0.0;
+		color: #c0c0c0;
+	}
+	100% {
+		font-size: 250%;
+		margin-left: 150px;
+		color: white;
+		top: 50px;
+		opacity: 1.0;
+	}
+}
+
+.bg1 span {
+	font-size: 250%;
+	margin-left: 150px;
+	top: 50px;
+	opacity: 0.0;
+}
+}
+
+/* 800~999px 사이이면 적용 */
+@media all and (min-width: 800px) and (max-width: 999px) {
+	 header {
+		display: none;
+		/*
+	 	position: relative;
+	 	width: 100%;
+	 	height: 80px;
+	 	*/
+	 } 
+	 
+	 nav {
+	 	margin-left: 0%;
+		width: 100%;
+	 } 
+	 
+	 section {
+	 	margin-left: 0%;
+		width: 100%;
+	 }	
+	 
+	/* 각 박스(article)의 크기 지정 */
+	article:nth-child(1) { width: 100%; height: 400px; }
+	article:nth-child(2) { width: 66.66%; }
+	article:nth-child(3) { width: 33.33%; }
+	article:nth-child(4) { width: 20%; display: none; }
+	article:nth-child(5) { width: 33.33%; }
+	article:nth-child(6) { width: 66.66%; }
+	article:nth-child(7) { width: 20%; display: none; }
+	article:nth-child(8) { width: 33.33%; }
+	article:nth-child(9) { width: 33.33%; }
+	article:nth-child(10) { width: 20%; display: none; }
+	article:nth-child(11) { width: 33.33%; }
+	article:nth-child(12) { width: 20%; display: none; }
+	
+	
+		 /***************************** 이미지 박스 호버 효과 작성 *************************************/
+.bg1 span {
+	position: relative;
+	top: 100px;
+	opacity: 0.0;
+	color: #8080ff;
+	font-family: 'Taviraj';
+}
+
+.bg1:hover span {
+	opacity: 1;
+	color: white;
+	animation: ani3 2.5s 1;
+}
+
+@keyframes ani3 {
+	0% {
+		margin-left: 0px;
+		top: 100px;
+		opacity: 0.0;
+		color: #c0c0c0;
+	}
+	
+	50% {
+		font-size: 350%;
+		color: silver;
+		
+	}
+	100% {
+		font-size: 230%;
+		margin-left: 150px;
+		color: white;
+		top: 50px;
+		opacity: 1.0;
+	}
+}
+
+.bg1 span {
+	font-size: 250%;
+	margin-left: 150px;
+	top: 50px;
+	opacity: 0.0;
+}
+}
+
+/* 600~799px 사이이면 적용 */
+@media all and (min-width: 600px) and (max-width: 799px) {
+	 header {
+	 	display: none;
+		/*
+	 	position: relative;
+	 	width: 100%;
+	 	height: 130px;
+	 	*/
+	 } 	 
+	 nav {
+	 	display: none;
+	 }	 
+	 section {
+	 	margin-left: 0%;
+		width: 100%;
+	 }	 
+	 article {
+	 	height: 150px;
+	 }
+	/* 각 박스(article)의 크기 지정 */
+	article:nth-child(1) { width: 100%; height: 300px; }
+	article:nth-child(2) { width: 100%; }
+	article:nth-child(3) { width: 33.33%; display: none;  }
+	article:nth-child(4) { width: 20%; display: none; }
+	article:nth-child(5) { width: 50%; }
+	article:nth-child(6) { width: 50%; }
+	article:nth-child(7) { width: 20%; display: none; }
+	article:nth-child(8) { width: 50%; }
+	article:nth-child(9) { width: 50%; }
+	article:nth-child(10) { width: 20%; display: none; }
+	article:nth-child(11) { width: 50%; }
+	article:nth-child(12) { width: 50%; }
+	
+	
+			 /***************************** 이미지 박스 호버 효과 작성 *************************************/
+.bg1 span {
+	position: relative;
+	top: 100px;
+	opacity: 0.0;
+	color: #8080ff;
+	font-family: 'Taviraj';
+}
+
+.bg1:hover span {
+	opacity: 1;
+	color: white;
+	animation: ani4 2.5s 1;
+}
+
+@keyframes ani4 {
+	0% {
+		margin-left: 10px;
+		top: 100px;
+		opacity: 0.0;
+		color: #c0c0c0;
+	}
+	
+	50% {
+		font-size: 150%;
+		color: silver;
+		
+	}
+	100% {
+		font-size: 160%;
+		margin-left: 150px;
+		color: white;
+		top: 50px;
+		opacity: 1.0;
+	}
+}
+
+.bg1 span {
+	font-size: 160%;
+	margin-left: 150px;
+	top: 50px;
+	opacity: 0.0;
+}
+}
+
+
+/* 0~599px 이면 적용 */
+@media all and (max-width: 599px) {
+	 header {
+		display: none;
+	 	/*
+	 	position: fixed;
+	 	width: 100%;
+	 	height: 40px;
+	 	background-color: transparent; /* 투명배경 */
+	 	z-index: 5;
+	 	*/
+	 } 	 
+	 
+	 nav {
+	 	display: none;
+	 }	
+	  
+	 section {
+	 	margin-left: 0%;
+		width: 100%;
+		z-index: 4;
+	 }	 
+	 
+	 article {
+	 	display: none;
+	 }
+	 
+	/* 각 박스(article)의 크기 지정 */
+	article:nth-child(1) { 
+		position: fixed;
+		display: block;
+		width: 100%; 
+		height: 100%; 
+	}
+	
+			 /***************************** 이미지 박스 호버 효과 작성 *************************************/
+.bg1 span {
+	position: relative;
+	top: 100px;
+	opacity: 0.0;
+	color: #8080ff;
+	font-family: 'Taviraj';
+}
+
+.bg1:hover span {
+	opacity: 1;
+	color: white;
+	animation: ani4 2.5s 1;
+}
+
+@keyframes ani4 {
+	0% {
+		margin-left: 0px;
+		top: 70px;
+		opacity: 0.0;
+		color: #c0c0c0;
+	}
+	
+	50% {
+		font-size: 150%;
+		color: silver;
+		
+	}
+	100% {
+		font-size: 180%;
+		margin-left: 70px;
+		color: white;
+		top: 20px;
+		opacity: 1.0;
+	}
+}
+
+.bg1 span {
+	font-size: 180%;
+	margin-left: 70px;
+	top: 20px;
+	opacity: 0.0;
+}
+}
+
+
+.mp {
+position: absolute;
+margin:0;
+padding:0;
+box-sizing:border-box;
+object-fit:fill;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mp:hover {
+	
+
+	
+	    transition: all 2.5s;
+	      border-radius: 10%;
+}
+
+
+
+footer {
+	width: 100%;
+	height: 12px;
+	font-size: 80%;
+	font-family: sans-serif;
+	font-size: 70%;
+	margin-top:auto; 
+	text-align: center;
+	background: transparent;
+	color: #111;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	
+	
+}
+
+footer a, footer a:hover {
+	color: #0000ff;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer p {
+	text-transform: uppercase; /* 모두 대문자로 변경 */
+}
+
+footer p {
+	line-height: 24px;
+	padding: 0;
+	text-decoration: none;
+}
+
+
+
+
+.blinkEle{
+	-webkit-animation:blink 1.5s ease-in-out infinite alternate;
+    -moz-animation:blink 1.5s ease-in-out infinite alternate;
+    animation:blink 1.0s ease-in-out infinite alternate;
+    
+}
+@-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
